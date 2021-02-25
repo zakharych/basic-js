@@ -3,6 +3,7 @@
 ⚠️ DO NOT SUBMIT PULL REQUESTS TO THIS REPO ⚠️
 
 ## General task description
+
 Your task is to write several functions that are the solution to the subtasks. Subtasks descriptions, as well as instructions on how to run tests and submit solutions are below.
 
 ---
@@ -15,11 +16,7 @@ Number of cats found should be `number`. If no cats found, function should retur
 
 For example:
 
-`countCats([
-    [0, 1, '^^'],
-    [0, '^^', 2],
-    ['^^', 1, 2]
-  ]) => 3`
+`countCats([ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ]) => 3`
 
 Write your code in `src/count-cats.js`.
 
@@ -34,9 +31,10 @@ The approximate age of the sample is calculated by measuring the **ratio** of th
 [Read about method](https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Nuclear_Chemistry/Nuclear_Kinetics/Half-Lives_and_Radioactive_Decay_Kinetics#section_2)
 
 ---
+
 <details>
 
-  <summary>About calculations</summary>
+<summary>About calculations</summary>
   You can use the formula from the article at the link above. 0.693 is an approximation of the natural logarithm of two.
 
 </details>
@@ -84,6 +82,7 @@ Your task is to implement the function `getSeason(date)` that accepts `Date` obj
 Time of the year must be `string`.
 
 ---
+
 <details>
 
 <summary>Seasons in English</summary>
@@ -119,6 +118,7 @@ Write your code in `src/what-season.js`.
 It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
 
 The objective of the puzzle is to move the entire stack to another rod, obeying the following simple **rules**:
+
 * Only **one** disk can be moved at a time.
 * Each move consists of taking the **upper** disk from one of the stacks and placing it on **top** of another stack or on an empty rod.
 * No **larger** disk may be placed on top of a **smaller** disk.
@@ -129,6 +129,7 @@ Implement the function `calculateHanoi` that accepts `diskNumber` and `turnsSpee
 Both parameters are `numbers`.
 
 `calculateHanoi` function returns an object with 2 properties:
+
 * `turns` (minimum `number` of turns to solve the puzzle)
 * `seconds` (minimum `number` of **seconds** to solve the puzzle at a given `turnsSpeed`, seconds must be an integer, obtained  from **rounded down** (floor) calculation result)
 
@@ -146,6 +147,7 @@ Write your code in `src/hanoi-tower.js`.
 
 Your task is to implement the function `transform(arr)` that takes an `array` and returns **transformed** array, based on the **control sequences** that `arr` contains.
 **Control sequences** are defined `string` elements of the mentioned `array`:
+
 * `--discard-next` excludes the next element of the array from the transformed array.
 * `--discard-prev` excludes the previous element of the array from the transformed array.
 * `--double-next` doubles the next element of the array in the transformed array.
@@ -164,10 +166,12 @@ Write your code in `src/transform-array.js`.
 ---
 
 ### **Chain maker**
+
 Let's practice in [chaining](https://en.wikipedia.org/wiki/Method_chaining)!
 
 Your task is to create the object `chainMaker` that creates chains. The finished chain is a `string` and looks like this: `'( value1 )~~( value2 )~~( value3 )'`.
 The `chainMaker` has several **methods** for creating chains and modifying them:
+
 * `getLength` returns the current chain length as a number;
 * `addLink(value)` adds a link containing a `string` representation of the `value` to the chain;
 * `removeLink(position)` removes a chain link in the specified position;
@@ -189,6 +193,7 @@ Write your code in `src/simple-chain.js`.
 ---
 
 ### **Recursive depth calculator**
+
 ![Go deeper](https://i.imgur.com/k7lADiM.jpg)
 
 Your task is to implement the class `DepthCalculator` with method `calculateDepth` that takes an `array` and returns its depth.
@@ -208,10 +213,12 @@ For example:
 Write your code in `src/recursive-depth.js`.
 
 ---
+
 ### **Extended repeater**
 
 Your task is to implement the function `repeater(str, options)`.
 This function returns a repeating `string` based on the given parameters:
+
 * `str` is a `string` to repeat;
 * `options` is an `object` of options, that contains properties:
   * `repeatTimes` sets the `number` of repetitions of the `str`;
@@ -222,7 +229,7 @@ This function returns a repeating `string` based on the given parameters:
 
 The `str` and `addition` parameters are `strings` by default. In case when **type** of these parameters is different, they must be converted to a `string`.
 
-`separator` and `additionSeparator` parameters are `strings`. 
+`separator` and `additionSeparator` parameters are `strings`.
 
 `repeatTimes` and `additionRepeatTimes` are integer `numbers` (in the absence of any of them, the corresponding string is not repeated).
 
@@ -241,7 +248,7 @@ Cryptography is awesome! Let's try to organize production of encryption machines
 Our machine will have 2 modifications: **direct** and **reverse** (the type of machine is determined at the moment of creation). The **direct** machine simply encodes and decodes the string that was transmitted to it, and the **reverse** machine returns an **inverted** string after encoding and decoding.
 
 Your task is to implement the class `VigenereCipheringMachine`. `constructor` of this `class` accepts `true` (**or nothing**) to create **direct** machine and `false` to create **reverse** machine.
-Each instance of `VigenereCipheringMachine` must have 2 methods: `encrypt` and `decrypt`. 
+Each instance of `VigenereCipheringMachine` must have 2 methods: `encrypt` and `decrypt`.
 
 `encrypt` method accepts 2 parameters: `message` (`string` to encode) and `key` (`string`-keyword).
 
@@ -270,17 +277,19 @@ Write your code in `src/vigenere-cipher.js`.
 ---
 
 #### Prerequisites
-1. Install [Node.js](https://nodejs.org/en/download/)   
+
+1. Install [Node.js](https://nodejs.org/en/download/)
 2. Fork this repository: https://github.com/AlreadyBored/basic-js
-3. Clone your newly created repo: https://github.com/<%your_github_username%>/basic-js/  
-4. Go to folder `basic-js`  
-5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
+3. Clone your newly created repo: https://github.com/<%your_github_username%>/basic-js/
+4. Go to folder `basic-js`
+5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)
 6. Run `npm run test` in command line.
-7. You will see the number of pending, passing and failing tests. 100% of passing tests is equal to 100p in score  
+7. You will see the number of pending, passing and failing tests. 100% of passing tests is equal to 100p in score
 
 ---
 
 #### Submit to [rs app](https://app.rs.school)
+
 1. Open [rs app](https://app.rs.school) and login
 2. Go to [submit task page](https://app.rs.school/course/student/auto-test?course=rs-2020-q3)
 3. Select your task (BasicJS)
@@ -289,6 +298,7 @@ Write your code in `src/vigenere-cipher.js`.
 ---
 
 #### Notes
+
 1. We recommend you to use nodejs of version 12 or lower. If you use any of features, that does not supported by node v12, there may be problems with task submit.
 2. Please, be sure that each of your tests is limited to 30 sec.
 
