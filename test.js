@@ -6,5 +6,5 @@ require('./test/what-season.test');/////   почти
 require('./test/vigenere-cipher.test');
 require('./test/hanoi-tower.test'); ///// ок
 require('./test/transform-array.test');///// ок
-require('./test/simple-chain.test');
+require('./test/simple-chain.test');///// ок
 require('./test/recursive-depth.test');
