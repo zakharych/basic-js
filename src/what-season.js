@@ -9,14 +9,14 @@ module.exports = function getSeason(date) {
   } else if (typeof date === "string" || typeof date === "number" ) {
     return false
   } else if (typeof date === "function"){
-    console.log('THROWN');
-    console.log(date);
+    // console.log('THROWN');
+    // console.log(date);
     throw new Error('THROWN')
   } else if (typeof date === "object") {
     if (typeof date.getMonth === "function") {
       // console.log(date);
       inData = date;
-      console.log(inData);
+      // console.log(inData);
       mounth = inData.getMonth();
       if (mounth >= 2 && mounth <= 4) {
         // console.log("spring");

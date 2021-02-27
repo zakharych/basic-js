@@ -5,7 +5,7 @@ const chainMaker = {
   getLength() {},
   addLink(value) {
     if (arguments.length === 0) {
-      console.log(`(${value})`);
+      // console.log(`(${value})`);
       this.val.push("( )");
     }
     this.val.push(`( ${value} )`);

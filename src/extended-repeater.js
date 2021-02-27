@@ -30,7 +30,7 @@ module.exports = function repeater(str, options) {
 
     i++;
   }
-  console.log(newStr);
+  // console.log(newStr);
   addStr = newStr;
   newStr = "";
   while (j < options.repeatTimes) {

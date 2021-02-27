@@ -20,7 +20,7 @@ module.exports = function createDreamTeam(members) {
       dreamTeamStr += element;
     });
 
-    console.log(dreamTeamStr);
+    // console.log(dreamTeamStr);
     return dreamTeamStr;
   } else {
     return false;
