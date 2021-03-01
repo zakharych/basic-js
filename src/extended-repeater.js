@@ -14,7 +14,7 @@ module.exports = function repeater(str, options) {
     options.repeatTimes = 1;
   }
   if (options.additionSeparator === undefined) {
-    options.additionSeparator = "";
+    options.additionSeparator = "|";
   }
 
   str = str;
